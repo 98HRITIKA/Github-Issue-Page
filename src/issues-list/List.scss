@@ -1,0 +1,38 @@
+.list-container {
+  position: relative;
+
+  .loader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(248, 248, 250, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .spinner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .spinner-icon {
+        height: 30px;
+        width: auto;
+        animation: spin 1s ease-in-out infinite;
+      }
+
+      span {
+        color: #000;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

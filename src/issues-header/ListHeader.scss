@@ -1,0 +1,40 @@
+.list-header-container {
+  padding: 16px;
+  background: #f6f8fa;
+  height: 21px;
+  width: calc(100% - 32px);
+  border: 1px solid #d1d5da;
+  border-bottom-width: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left {
+    span {
+      color: #586069;
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+
+      &.active {
+        color: #24292e;
+      }
+
+      &:last-child {
+        margin-left: 10px;
+      }
+
+      .icon {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
